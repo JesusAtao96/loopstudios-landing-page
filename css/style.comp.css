@@ -429,6 +429,18 @@ body {
       .footer__icons {
         grid-row: 3 / 4;
         justify-self: center; } }
+  .footer__icon:hover::after, .footer__anchor:hover::after {
+    content: '';
+    width: 22px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .footer__icon {
+    position: relative;
+    cursor: pointer; }
   @media only screen and (max-width: 50em) {
     .footer__navigation {
       margin: 20px 0; } }
@@ -452,15 +464,6 @@ body {
     text-decoration: none;
     position: relative;
     letter-spacing: .2px; }
-    .footer__anchor:hover::after {
-      content: '';
-      width: 22px;
-      height: 1px;
-      background-color: white;
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%); }
   .footer__copy {
     justify-self: end;
     color: #8c8c8c; }
